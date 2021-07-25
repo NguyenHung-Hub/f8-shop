@@ -62,24 +62,43 @@ html {
     position: relative;
     margin: auto;
 
-    background-color: var(--white-color);
-    border-radius: 5px;
     z-index: 1;
 }
 
 /* Button style  */
 .btn {
     min-width: 142px;
-    height: 36px;
-    padding: 0;
+    height: 34px;
+    padding: 0 12px;
 
     font-size: 1.5rem;
     text-decoration: none;
     border: none;
     border-radius: 2px;
+
+    color: var(--text-color);
+    background-color: var(--white-color);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    outline: none;
+    cursor: pointer;
+}
+
+.btn.btn--normal:hover {
+    background-color: rgba(0, 0, 0, 0.05);
 }
 
 .btn.btn--primary {
     color: var(--white-color);
     background-color: var(--primary-color);
+}
+
+.btn.btn--size-s {
+    height: 32px;
+    padding: 0 8px;
+
+    font-size: 1.2rem;
 }
