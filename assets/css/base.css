@@ -83,6 +83,8 @@ html {
     justify-content: center;
     align-items: center;
 
+    line-height: 1.6rem;
+
     outline: none;
     cursor: pointer;
 }
